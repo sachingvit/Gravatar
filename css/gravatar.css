@@ -1,0 +1,36 @@
+.block{
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+}
+.avatarBlock{
+    float: left;
+    margin: 15px;
+    /*inn: 25%;*/
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    color: #000;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.avatarBlock.round{
+    border-radius: 50%;
+    font-size: 18px;
+}
+.avatarBlock.box{
+    border-radius: 10%;
+    font-size: 18px;
+}
+.avatarBlock.box{
+    border-radius: 10%;
+    font-size: 18px;
+}
+
+.avatar-a,.avatar-A{ color: #fff;background-color: #4C1A1A}.avatar-b,.avatar-B{ color: #fff;background-color: #7FFFD4}.avatar-c,.avatar-C{ color: #fff;background-color: #000000}.avatar-d,.avatar-D{ color: #fff;background-color: #0000FF}.avatar-e,.avatar-E{ color: #fff;background-color: #A52A2A}.avatar-f,.avatar-F{ color: #fff;background-color: #6495ED}.avatar-g,.avatar-G{ color: #fff;background-color: #DC143C}.avatar-h,.avatar-H{ color: #fff;background-color: #00008B}.avatar-i,.avatar-I{ color: #fff;background-color: #006400}.avatar-j,.avatar-J{ color: #fff;background-color: #8B008B}.avatar-k,.avatar-K{ color: #fff;background-color: #8B0000}.avatar-l,.avatar-L{ color: #fff;background-color: #9400D3}.avatar-m,.avatar-M{ color: #fff;background-color: #FF1493}.avatar-n,.avatar-N{ color: #fff;background-color: #B22222}.avatar-o,.avatar-O{ color: #fff;background-color: #008000}.avatar-p,.avatar-P{ color: #fff;background-color: #4B0082}.avatar-q,.avatar-Q{ color: #fff;background-color: #F08080}.avatar-r,.avatar-R{ color: #fff;background-color: #800000}.avatar-s,.avatar-S{ color: #fff;background-color: #0000CD}.avatar-t,.avatar-T{ color: #fff;background-color: #191970}.avatar-u,.avatar-U{ color: #fff;background-color: #FF4500}.avatar-v,.avatar-V{ color: #fff;background-color: #800080}.avatar-w,.avatar-W{ color: #fff;background-color: #CD853F}.avatar-x,.avatar-X{ color: #fff;background-color: #FF0000}.avatar-y,.avatar-Y{ color: #fff;background-color: #4169E1}.avatar-z,.avatar-Z{ color: #fff;background-color: #008080}
