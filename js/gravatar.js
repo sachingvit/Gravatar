@@ -1,6 +1,5 @@
 /*!
- * jQuery JavaScript Library v1.11.3
- * Gravatar plugin
+ * Gravatar plugin v1.0Beta
  * 
  *
  * Copyright 2015, 2015 Open Source Foundation
