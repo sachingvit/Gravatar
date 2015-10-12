@@ -1,8 +1,14 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*!
+ * jQuery JavaScript Library v1.11.3
+ * Gravatar plugin
+ * 
+ *
+ * Copyright 2015, 2015 Open Source Foundation
+ * Released under the MIT license
+ * 
+ * Date: 2015-10-09T06:14
  */
+
 
 "use strict";
 (function () {
