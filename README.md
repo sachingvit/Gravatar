@@ -1,12 +1,14 @@
 # Gravatar
 
+## [Live Demo](http://flippace.com/jQuery-gravatar/)
+
 Pre Requirement 
 
 - jQuery.js
 
-Initilization
+initialization 
 
-Its very easy to initilize the plugin 
+Its very easy to initialize the plug-in 
 
 Step 1: 
 	In HTML 
@@ -18,9 +20,9 @@ Step 1:
 
 Step 2:
 	
-	Add plugin assets
+	Add plug-in assets
 	
-		<script type="text/javascript" src="js/gravatar.js"></script>
+		<script type="text/javascript" src="js/gravatar.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/gravatar.css">
 		
 Here is done. 		
