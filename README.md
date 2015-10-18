@@ -24,7 +24,7 @@ Step 2:
 	
 		<script type="text/javascript" src="js/gravatar.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/gravatar.css">
-Step : 
+Step 3: 
 	Initialize the script
 	
 	$('.avatarBlock').avatar();
