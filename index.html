@@ -13,6 +13,25 @@ and open the template in the editor.
         <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="css/gravatar.css">
         <link rel="stylesheet" type="text/css" href="css/site.css">
+        <style>
+            .avatarBlock{
+                
+                height: auto;
+                width: auto;
+            }
+            .image-avatar{
+                border-radius: 50%;
+                height: 30px;
+                width:  30px;
+            }
+            .avatarBlock{
+                height: 30px !important;
+                width:  30px !important;
+                max-height: 30px !important; 
+                max-width: 30px !important; 
+                font-size:12px !important;
+            }
+        </style>
     </head>
     <body>
 
@@ -23,6 +42,8 @@ and open the template in the editor.
             </a>
         </div>
         <div data-avatar="john deo" class="avatarBlock round avatar-A"></div>
+        <div data-avatar="Sachin Jain" class="avatarBlock round avatar-A" data-image-src="https://www.google.com"></div>
+        <div data-avatar="Sachin Jain" class="avatarBlock round avatar-A" data-image-src="https://avatars2.githubusercontent.com/u/4231074?v=3&s=96"></div>
         <div style="clear: both;"></div>
 
         <div class="block"></div>
@@ -30,7 +51,7 @@ and open the template in the editor.
 
 
 
-        <script type="text/javascript" src="js/gravatar.min.js"></script>
+        <script type="text/javascript" src="js/gravatar.js"></script>
         <script type="text/javascript">
             (function ($) {
 
@@ -46,8 +67,8 @@ and open the template in the editor.
                     $('.block').append('<div style="clear: both;"></div>');
                 }
 
-                initlizator(65, 90, 'round');
-                initlizator(97, 122, 'box');
+                //initlizator(65, 90, 'round');
+                //initlizator(97, 122, 'box');
 
                 setTimeout(function () {
                     $('.avatarBlock').avatar();

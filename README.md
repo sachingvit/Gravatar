@@ -2,6 +2,7 @@
 
 ## [Live Demo](http://webdevelopmentzones.com/jQuery-gravatar//)
 
+
 Pre Requirement 
 
 - jQuery.js
