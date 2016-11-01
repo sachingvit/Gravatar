@@ -1,6 +1,6 @@
 # Gravatar
 
-## [Live Demo](http://webdevelopmentzones.com/jQuery-gravatar//)
+## [Live Demo](http://webdevelopmentzones.com/jQuery-gravatar/)
 
 
 Pre Requirement 
