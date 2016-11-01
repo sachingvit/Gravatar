@@ -5,7 +5,7 @@
 }
 .avatarBlock{
     float: left;
-    margin: 15px;
+    margin:3px;
     /*inn: 25%;*/
     height: 50px;
     width: 50px;
@@ -18,6 +18,7 @@
     background-color: #f3f3f3;
     border-radius: 5px;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .avatarBlock.round{
@@ -32,30 +33,23 @@
     border-radius: 10%;
     font-size: 18px;
 }
+.avatar-a,.avatar-A{ color: #fff;background-color: #283593}.avatar-b,.avatar-B{ color: #fff;background-color: #ff7171}.avatar-c,.avatar-C{ color: #fff;background-color: #CC0000}.avatar-d,.avatar-D{ color: #fff;background-color: #ffbc42}.avatar-e,.avatar-E{ color: #fff;background-color: #546E7A}.avatar-f,.avatar-F{ color: #fff;background-color: #795548}.avatar-g,.avatar-G{ color: #fff;background-color: #03A9F4}.avatar-h,.avatar-H{ color: #fff;background-color: #ee6e9f}.avatar-i,.avatar-I{ color: #fff;background-color: #0033FF}.avatar-j,.avatar-J{ color: #fff;background-color: #4CAF50}.avatar-k,.avatar-K{ color: #fff;background-color: #8BC34A}.avatar-l,.avatar-L{ color: #fff;background-color: #33CC00}.avatar-m,.avatar-M{ color: #fff;background-color: #009688}.avatar-n,.avatar-N{ color: #fff;background-color: #B22222}.avatar-o,.avatar-O{ color: #fff;background-color: #008000}.avatar-p,.avatar-P{ color: #fff;background-color: #673AB7}.avatar-q,.avatar-Q{ color: #fff;background-color: #F08080}.avatar-r,.avatar-R{ color: #fff;background-color: #FF5722}.avatar-s,.avatar-S{ color: #fff;background-color: #E91E63}.avatar-t,.avatar-T{ color: #fff;background-color: #191970}.avatar-u,.avatar-U{ color: #fff;background-color: #FF4500}.avatar-v,.avatar-V{ color: #fff;background-color: #800080}.avatar-w,.avatar-W{ color: #fff;background-color: #CD853F}.avatar-x,.avatar-X{ color: #fff;background-color: #FF0000}.avatar-y,.avatar-Y{ color: #fff;background-color: #4169E1}.avatar-z,.avatar-Z{ color: #fff;background-color: #008080}
+.avatarBlock{
 
-.avatar-a,.avatar-A{ color: #fff;background-color: #ffcdd2}
-.avatar-b,.avatar-B{ color: #fff;background-color: #5C6BC0}
-.avatar-c,.avatar-C{ color: #fff;background-color: #2E7D32}
-.avatar-d,.avatar-D{ color: #fff;background-color: #F50057}
-.avatar-e,.avatar-E{ color: #fff;background-color: #FFE0B2}
-.avatar-f,.avatar-F{ color: #fff;background-color: #A1887F}
-.avatar-g,.avatar-G{ color: #fff;background-color: #006064}
-.avatar-h,.avatar-H{ color: #fff;background-color: #9FA8DA}
-.avatar-i,.avatar-I{ color: #fff;background-color: #B388FF}
-.avatar-j,.avatar-J{ color: #fff;background-color: #FF3D00}
-.avatar-k,.avatar-K{ color: #fff;background-color: #b71c1c}
-.avatar-l,.avatar-L{ color: #fff;background-color: #90A4AE}
-.avatar-m,.avatar-M{ color: #fff;background-color: #7C4DFF}
-.avatar-n,.avatar-N{ color: #fff;background-color: #A5D6A7}
-.avatar-o,.avatar-O{ color: #fff;background-color: #2196F3}
-.avatar-p,.avatar-P{ color: #fff;background-color: #00C853}
-.avatar-q,.avatar-Q{ color: #fff;background-color: #00BCD4}
-.avatar-r,.avatar-R{ color: #fff;background-color: #EC407A}
-.avatar-s,.avatar-S{ color: #fff;background-color: #212121}
-.avatar-t,.avatar-T{ color: #fff;background-color: #82B1FF}
-.avatar-u,.avatar-U{ color: #fff;background-color: #80D8FF}
-.avatar-v,.avatar-V{ color: #fff;background-color: #DD2C00}
-.avatar-w,.avatar-W{ color: #fff;background-color: #9C27B0}
-.avatar-x,.avatar-X{ color: #fff;background-color: #795548}
-.avatar-y,.avatar-Y{ color: #fff;background-color: #F9A825}
-.avatar-z,.avatar-Z{ color: #fff;background-color: #00B8D4}
+    height: auto;
+    width: auto;
+}
+.image-avatar{
+    /*border-radius: 50%;*/
+/*    min-height: 32px;*/
+    width:  100%;
+    /*height: auto;*/
+}
+.avatarBlock{
+    height: 30px !important;
+    width:  30px !important;
+    max-height: 30px !important;
+    max-width: 30px !important;
+    font-size:12px !important;
+    margin-top: -2px;
+}
