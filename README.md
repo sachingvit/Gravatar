@@ -23,14 +23,15 @@ Step 2:
 	
 	Add plug-in assets
 	
-		<script type="text/javascript" src="js/gravatar.min.js"></script>
+		 <script type="text/javascript" src="js/gravatar.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/gravatar.css">
 Step 3: 
 	Initialize the script
 	
 	$('.avatarBlock').avatar();
 
-Here is done. 		
+
+And it's done. Enjoy the plugin.👏	
 	
 	
 
