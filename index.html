@@ -1,181 +1,99 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
 
 <head>
-    <title>Gravtar jQuery Plugin Demo</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" type="text/css" href="./css/gravatar.css">
     <link rel="stylesheet" type="text/css" href="css/site.css">
 
     <script src="./js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="./js/gravatar.js"></script>
-    <style>
-        body {
-            font-size: 16px;
-            display: block;
-            width: auto;
-            height: auto;
-            /* padding: 2.5rem; */
-        }
-        
-        .avatarBlock {
-            height: auto;
-            width: auto;
-        }
-        
-        .avatarBlock.round .image-avatar {
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
-        }
-        
-        .avatarBlock.box .image-avatar {
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
-        }
-        
-        .avatarBlock {
-            height: 30px !important;
-            width: 30px !important;
-            max-height: 30px !important;
-            max-width: 30px !important;
-            font-size: 12px !important;
-        }
-        
-        .center {
-            margin-left: 100px;
-        }
-        
-        .note {
-            padding: 20px;
-            color: #000;
-            background-color: #B3E5FC;
-            margin-left: 20px;
-        }
-        
-        .container {
-            background-color: #fff;
-            width: 100%;
-            height: 100%;
-            padding: 3rem;
-            margin: 3rem;
-            /* margin: -10px 75px 25px; */
-            /*opacity: 0.5;*/
-            /* padding: 25px; */
-        }
-        
-        xmp {
-            padding-left: -100px;
-        }
-        
-        body {
-            background-color: #CFD8DC;
-            background-image: url("./images/1.jpg");
-            background-size: cover;
-            /* <------ */
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        
-        li {
-            margin-left: 30px;
-        }
-        
-        @media only screen and (max-width: 600px) {
-            body {
-                background-color: lightblue;
-            }
-            .container {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="main">
-            <h1>Live Demo: Gravatar jQuery Plugin </h1>
-            <a href="https://github.com/sachingvit/Gravatar/tree/gravatar_beta_develop_sachin" target="_blank">
-                <img src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png">
-            </a>
-        </div>
-        <span>
-            <h3>Pre-required :</h3>
-            To use this plugin, user need following dependencies
-            <li> jQuery 1.7 or higher (Required)</li>
-            <li> bootstrap.js (Optional) </li>
-        </span>
-        <span>
-            <h3>Installation Process:</h3>
-            <span>It's very easy to integrate this plugin into your web page </span>
-        <h4>Step 1: Add element like </h4>
-        <xmp>
-            <div data-avatar="John Deo" class="avatarBlock"></div>
-        </xmp>
-        <h4>Step 2: Include plugin assets file into your web page</h4>
-        <xmp>
-            <link rel="stylesheet" type="text/css" href="css/gravatar.css">
-            <script type="text/javascript" src="js/gravatar.min.js"></script>
-        </xmp>
-        <h4>Step 3: Initialize the script on element</h4>
-        <xmp>
-            $('.avatarBlock').avatar();
-        </xmp>
+        <header class="header">
+            <div class="plugin-header">jQuery-Avatar Plugin</div>
+            <nav class="nav">
+                <ul class="navlist">
+                    <a href="#setup">
+                        <li class="nav-item">Setup</li>
+                    </a>
+                    <a href="#example">
+                        <li class="nav-item">Examples</li>
+                    </a>
+                    <a href="#download">
+                        <li class="nav-item">Download</li>
+                    </a>
+                </ul>
+                <div class="nav-item">
+                    <a href="https://github.com/sachingvit/Gravatar" target="_blank" title="Fork |  jQuery Avatar">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="jQuery Avatar Plagin | Sachin Jain" />
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="section plugin-info" style="display: none;">
+                <h2>What this plugin does</h2>
+                <p></p>
+            </div>
+            <div class="section plugin-setup">
+                <h2 id="#setup">How to setup</h2>
+                <p></p>
+                <div>
+                    <h3>Pre-required :</h3>
+                    To use this plugin, user need following dependencies
+                    <li> jQuery 1.7 or higher (Required)</li>
+                    <li> bootstrap.js (Optional) </li>
+                </div>
+                <div id="download">
+                    <h3>Installation Process:</h3>
+                    <span>It's very easy to integrate this plugin into your web page </span>
+                    <h4>Step 1: Add element like </h4>
+                    <pre><xmp><div data-avatar="John Deo" class="avatarBlock"></div></xmp></pre>
 
-        And it's done. Plugin is ready to perform.
-        </span>
+                    <h4>Step 2: Include plugin assets file into your web page</h4>
+                    <pre><xmp><link rel="stylesheet" type="text/css" href="css/gravatar.css"></xmp></pre>
+                    <pre><xmp><script type="text/javascript" src="js/gravatar.min.js"></script></xmp></pre>
+                    <h4>Step 3: Initialize the script on element</h4>
+                    <pre><xmp>$('.avatarBlock').avatar();</xmp></pre>
 
-        <div>
-            <h4>Example 1</h4>
-            <xmp>
-                <div data-avatar="John Deo" class="avatarBlock"></div>
-            </xmp>
-            <h5 class="center">Output: </h5>
-            <div data-avatar="John Deo" class="center avatarBlock box"></div>
-            <script>
-                jQuery('.avatarBlock1').avatar();
-            </script>
+                    <p>And it's done. Plugin is ready to perform.</p>
+                </div>
+            </div>
+            <div class="section plugin-code-snippet">
+                <h2 id="example">Let's check some examples</h2>
+                <div>
+                    <h4>Example 2: Show image </h4>
+                    <pre><xmp><div data-avatar="John Deo" class="avatarBlock round" data-image-src="/broken-image-src"></div></xmp></pre>
+                    <pre><xmp><div data-avatar="Sachin Jain" class="avatarBlock round" data-image-src="/src/image"></div></xmp></pre>
+                    <h5 class="center">Result: </h5>
+                    <div class="output">
+                        <div data-avatar="John Deo" class=" center avatarBlock round avatar-A" data-image-src="/broken-image-src"></div>
+                        <div data-avatar="Sachin Jain" class="center avatarBlock round avatar-A" data-image-src="https://avatars2.githubusercontent.com/u/4231074?v=3&s=96"></div>
+                    </div>
 
-        </div>
-        <br />
-        <div>
-            <h4>Example 2: Show image </h4>
-            <xmp>
-                <div data-avatar="Ankit Gupta" class="avatarBlock round" data-image-src="/broken-image-src"></div>
-                <div data-avatar="Sachin Jain" class="avatarBlock round" data-image-src="/src/image"></div>
-            </xmp>
-            <h5 class="center">Output: </h5>
-            <div data-avatar="Ankit Gupta" class=" center avatarBlock round avatar-A" data-image-src="/broken-image-src"></div>
-            <div data-avatar="Sachin Jain" class="center avatarBlock round avatar-A" data-image-src="https://avatars2.githubusercontent.com/u/4231074?v=3&s=96"></div>
-            <script>
-                jQuery('.avatarBlock1').avatar();
-            </script>
-            <br />
-            <br />
-            <h5 class="center note"><span>Note: Plugin will automatically check for broken image link and handle view
-                    accordingly.</span></h5>
-        </div>
+                    <!-- <h5 class="center note"> -->
+                </div>
+                <div class="note">
+                    <p><span class="note-tick">&check;</span> Note: Plugin will automatically check for broken image link and handle viewaccordingly.</p>
+                </div>
+                <div class="block"></div>
+                <!-- </h5> -->
+            </div>
 
-        <br />
-
-        <div style="clear: both;"></div>
-
-        <div class="block"></div>
-        <div style="clear: both;"></div>
-
-
+        </main>
     </div>
+    <footer>
+        <!-- <div class="section footer">&copy;2021</div> -->
+    </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript">
         (function($) {
 
@@ -203,7 +121,6 @@ and open the template in the editor.
 
         }(jQuery));
     </script>
-    <!-- <script type="text/javascript" src="./js/script.js"></script> -->
 </body>
 
 </html>
