@@ -55,6 +55,8 @@ nav ul.navlist li.nav-item {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.5rem;
+    background-color: #fff;
+    color: #323232;
 }
 
 div.nav-item img {
@@ -64,10 +66,16 @@ div.nav-item img {
     align-items: center;
 }
 
-nav ul li:hover {
-    background-color: rgba(59, 56, 56, 0.822);
+nav ul li {
+    background-color: #fff;
+    color: #323232;
     border-radius: 10px;
-    color: #e2e2e2;
+}
+
+nav ul li:hover {
+    background-color: rgba(59, 56, 56, 0.822) !important;
+    border-radius: 10px;
+    color: #e2e2e2 !important;
 }
 
 main div.section {
@@ -118,4 +126,9 @@ div.avatarBlock {
         overflow: scroll;
         overflow-x: scroll;
     }
+}
+
+.plugin-header {
+    font-size: 16px;
+    padding: 5px;
 }
