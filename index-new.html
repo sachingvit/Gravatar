@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./css/gravatar.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+
+    <script src="./js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/gravatar.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="plugin-header">jQuery-Avatar Plugin</div>
+            <nav class="nav">
+                <ul class="navlist">
+                    <a href="#setup">
+                        <li class="nav-item">Setup</li>
+                    </a>
+                    <a href="#example">
+                        <li class="nav-item">Examples</li>
+                    </a>
+                    <a href="#download">
+                        <li class="nav-item">Download</li>
+                    </a>
+                </ul>
+                <div class="nav-item">
+                    <a href="https://github.com/sachingvit/Gravatar" target="_blank" title="Fork |  jQuery Avatar">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="jQuery Avatar Plagin | Sachin Jain" />
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="section plugin-info" style="display: none;">
+                <h2>What this plugin does</h2>
+                <p></p>
+            </div>
+            <div class="section plugin-setup">
+                <h2 id="#setup">How to setup</h2>
+                <p></p>
+                <div>
+                    <h3>Pre-required :</h3>
+                    To use this plugin, user need following dependencies
+                    <li> jQuery 1.7 or higher (Required)</li>
+                    <li> bootstrap.js (Optional) </li>
+                </div>
+                <div id="download">
+                    <h3>Installation Process:</h3>
+                    <span>It's very easy to integrate this plugin into your web page </span>
+                    <h4>Step 1: Add element like </h4>
+                    <pre><xmp><div data-avatar="John Deo" class="avatarBlock"></div></xmp></pre>
+
+                    <h4>Step 2: Include plugin assets file into your web page</h4>
+                    <pre><xmp><link rel="stylesheet" type="text/css" href="css/gravatar.css"></xmp></pre>
+                    <pre><xmp><script type="text/javascript" src="js/gravatar.min.js"></script></xmp></pre>
+                    <h4>Step 3: Initialize the script on element</h4>
+                    <pre><xmp>$('.avatarBlock').avatar();</xmp></pre>
+
+                    <p>And it's done. Plugin is ready to perform.</p>
+                </div>
+            </div>
+            <div class="section plugin-code-snippet">
+                <h2 id="example">Let's check some examples</h2>
+                <div>
+                    <h4>Example 2: Show image </h4>
+                    <pre><xmp><div data-avatar="John Deo" class="avatarBlock round" data-image-src="/broken-image-src"></div></xmp></pre>
+                    <pre><xmp><div data-avatar="Sachin Jain" class="avatarBlock round" data-image-src="/src/image"></div></xmp></pre>
+                    <h5 class="center">Result: </h5>
+                    <div class="output">
+                        <div data-avatar="John Deo" class=" center avatarBlock round avatar-A" data-image-src="/broken-image-src"></div>
+                        <div data-avatar="Sachin Jain" class="center avatarBlock round avatar-A" data-image-src="https://avatars2.githubusercontent.com/u/4231074?v=3&s=96"></div>
+                    </div>
+
+                    <!-- <h5 class="center note"> -->
+                </div>
+                <div class="note">
+                    <p><span class="note-tick">&check;</span> Note: Plugin will automatically check for broken image link and handle viewaccordingly.</p>
+                </div>
+                <div class="block"></div>
+                <!-- </h5> -->
+            </div>
+
+        </main>
+    </div>
+    <footer>
+        <!-- <div class="section footer">&copy;2021</div> -->
+    </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript">
+        (function($) {
+
+            function initlizator(start, end, elementClass) {
+
+                $('.block').append('<h2> Design: ' + elementClass + '</h2>');
+
+                for (var i = start; i <= end; i++) {
+                    elementBlock = '<div data-avatar="' + String.fromCharCode(i) + '" \n\
+                                        class="avatarBlock ' + elementClass + '"></div>'
+                    $('.block').append(elementBlock);
+                }
+                $('.block').append('<div style="clear: both;"></div>');
+            }
+
+            initlizator(65, 90, 'box');
+            initlizator(97, 122, 'round');
+
+            $(function() {
+                $('.avatarBlock').avatar({
+                    type: 'box'
+                });
+            });
+
+
+        }(jQuery));
+    </script>
+</body>
+
+</html>

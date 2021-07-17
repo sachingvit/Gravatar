@@ -1,0 +1,121 @@
+/* var themeColor: #fff; */
+
+* {
+    padding: 0;
+    margin: 0;
+    /* background : linear-gradient( 358.7deg,  rgba(42,136,157,1) 1.7%, rgba(122,197,214,1) 51.1%, rgba(211,232,242,1) 95.5% ); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* line-height: 200%; */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    /* height: 10vp; */
+}
+
+main {
+    /* height: 90vp; */
+}
+
+footer {
+    clear: both;
+    background-color: #f2f2f2;
+    margin-top: 1rem;
+    /* height       : 15vp; */
+}
+
+.container {
+    /* padding: 0rem 2rem 0rem 2rem; */
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    background-color: rgb(209 227 235 / 32%);
+}
+
+header div.plugin-header {
+    font-size: 16px;
+    color: #54bccabe;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+}
+
+nav ul.navlist li.nav-item {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+div.nav-item img {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:hover {
+    background-color: rgba(59, 56, 56, 0.822);
+    border-radius: 10px;
+    color: #e2e2e2;
+}
+
+main div.section {
+    padding: 2rem;
+    line-height: 200%;
+}
+
+main {
+    border-radius: 5px;
+    color: #e2e2e2;
+    background-image: linear-gradient(50deg, rgb(100, 98, 98), #333333);
+}
+
+main div.section:hover {
+    background-color: #55535388;
+    border-radius: 5px;
+}
+
+pre xmp {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #353535;
+}
+
+div.note {
+    clear: both;
+    color: green;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(211, 210, 208);
+}
+
+div.note span {
+    font-size: 1.25rem
+}
+
+div.avatarBlock {
+    font-size: 14px;
+    margin: 5px
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    pre xmp {
+        max-width: calc(100%-10%);
+        overflow: scroll;
+        overflow-x: scroll;
+    }
+}
