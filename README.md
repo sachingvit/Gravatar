@@ -1,6 +1,6 @@
 # Gravatar
 
-## [Live Demo](https://sachingvit.github.io/Gravatar/ jQuery Avatar Plugin)
+## [Live Demo](https://sachingvit.github.io/Gravatar)
 
 
 Pre Requirement 
